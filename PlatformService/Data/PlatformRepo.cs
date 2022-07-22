@@ -20,12 +20,12 @@ public class PlatformRepo : IPlatformRepo
         _context.Platforms.Add(platform);
     }
 
-    public IEnumerable<Platform> GetAllPrlatforms()
+    public IEnumerable<Platform> GetAllPlatforms()
     {
         return _context.Platforms.ToList();
     }
 
-    public Platform GetPrlatformsById(int id)
+    public Platform GetPlatformsById(int id)
     {
        return _context.Platforms.FirstOrDefault(x => x.Id == id);
     }

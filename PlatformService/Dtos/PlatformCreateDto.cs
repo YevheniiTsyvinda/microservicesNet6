@@ -2,12 +2,14 @@
 
 namespace PlatformService.Dtos;
 
-public record PlatformCreateDto(
+public class PlatformCreateDto
+{
     [Required]
-    string Name,
-    [Required]
-    string Publisher,
-    [Required]
-    string Cost
-    );
+    public string Name { get; set; }
 
+    [Required]
+    public string Publisher { get; set; }
+
+    [Required]
+    public string Cost { get; set; }
+}

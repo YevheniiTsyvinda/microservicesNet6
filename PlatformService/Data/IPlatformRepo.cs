@@ -6,7 +6,7 @@ public interface IPlatformRepo
 {
     bool SaveChanges();
 
-    IEnumerable<Platform> GetAllPrlatforms();
-    Platform GetPrlatformsById(int id);
+    IEnumerable<Platform> GetAllPlatforms();
+    Platform GetPlatformsById(int id);
     void CreatePlatform(Platform platform);
 }
